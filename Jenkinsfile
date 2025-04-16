@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git credentialsId: 'github-creds', url: 'https://github.com/Kush1025/SWE645_HW3.git'
+               git branch: 'main', credentialsId: 'github-creds', url: 'https://github.com/Kush1025/SWE645_HW3.git'
             }
         }
 
